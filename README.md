@@ -1,27 +1,39 @@
-# DesafioAngularFelipe
+# Desafio Angular - Formulário de Endereço
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+Neste repositório, você encontrará o projeto Angular que desenvolvi para implementar um formulário de endereço integrado com a API ViaCEP. O desafio consistia em criar os campos de endereço (CEP, rua, número, complemento, estado, cidade e bairro) e utilizar a API para preencher automaticamente os dados de endereço.
 
-## Development server
+## Instruções
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para realizar o desafio, siga os passos que eu segui:
 
-## Code scaffolding
+1. Abri o terminal.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Verifiquei se o Angular estava instalado. Caso contrário, utilizei o seguinte comando: `npm install -g @angular/cli`.
 
-## Build
+3. Criei um novo projeto Angular chamado "angular-example" sem testes: `ng new angular-example --skip-tests`. Durante a criação, escolhi a opção SCSS como formato do stylesheet.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Iniciei o projeto com o comando `ng serve`.
 
-## Running unit tests
+5. Abri o link no navegador (CTRL + Clique) e observei a página inicial do Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+6. Limpei o projeto, removendo o favicon, conteúdo do arquivo src/styles.scss e conteúdo do template HTML e da classe AppComponent.
 
-## Running end-to-end tests
+7. No arquivo src/app/app.component.html, criei os campos de endereço utilizando as tags div, label e input.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+8. Fiz a ligação dos campos HTML com a lógica do componente utilizando a diretiva [(ngModel)] e defini os campos dentro da classe AppComponent.
 
-## Further help
+9. Importei o módulo FormsModule no arquivo src/app/app.module.ts e verifiquei se não havia erros.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+10. Conectei-me à API ViaCEP importando o HttpClient no arquivo src/app/app.component.ts. Certifiquei-me de adicionar o módulo HttpClientModule no arquivo src/app/app.module.ts.
+
+11. No método correspondente ao campo de CEP, utilizei o HttpClient para fazer uma requisição GET para a API ViaCEP e associei os dados retornados aos campos correspondentes do formulário.
+
+12. Testei o funcionamento preenchendo um CEP válido e verifiquei se os dados de endereço eram exibidos corretamente no formulário.
+
+## Layout
+
+O layout do formulário foi desenvolvido de forma responsiva e seguindo as melhores práticas de design de interface de usuário.
+
+## Conclusão
+
+Com esse projeto, consegui criar um formulário de endereço funcional utilizando Angular e integrando-o com a API ViaCEP. Agora, os usuários podem preencher apenas o CEP e os demais campos são preenchidos automaticamente, proporcionando uma experiência mais eficiente e amigável.
