@@ -10,7 +10,7 @@ Para realizar o desafio, siga os passos que eu segui:
 
 2. Verifiquei se o Angular estava instalado. Caso contrário, utilizei o seguinte comando: `npm install -g @angular/cli`.
 
-3. Criei um novo projeto Angular chamado "angular-example" sem testes: `ng new angular-example --skip-tests`. Durante a criação, escolhi a opção SCSS como formato do stylesheet.
+3. Criei um novo projeto Angular chamado "desafio-angular-felipe" sem testes: `ng new desafio-angular-felipe --skip-tests`. Durante a criação, escolhi a opção SCSS como formato do stylesheet.
 
 4. Iniciei o projeto com o comando `ng serve`.
 
